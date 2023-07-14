@@ -71,3 +71,71 @@ export const services = [
       "Our designers will work with you to create a one-of-a-kind piece of artwork that perfectly captures your vision",
   },
 ];
+
+export const abstracts = [
+  {
+    id: 1,
+    image: "/GalleryImages/abstract-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/abstract-2.png",
+  },
+];
+
+export const africanWomens = [
+  {
+    id: 1,
+    image: "/GalleryImages/africa-women-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/africa-women-2.png",
+  },
+  {
+    id: 3,
+    image: "/GalleryImages/africa-women-3.png",
+  },
+];
+export const lions = [
+  {
+    id: 1,
+    image: "/GalleryImages/lion-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/lion-2.png",
+  },
+];
+export const mannequins = [
+  {
+    id: 1,
+    image: "/GalleryImages/mannequins-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/mannequins-2.png",
+  },
+];
+
+export const paintings = [
+  {
+    id: 1,
+    image: "/GalleryImages/painting-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/painting-2.png",
+  },
+];
+
+export const realistics = [
+  {
+    id: 1,
+    image: "/GalleryImages/realistic-1.png",
+  },
+  {
+    id: 2,
+    image: "/GalleryImages/realistic-2.png",
+  },
+];

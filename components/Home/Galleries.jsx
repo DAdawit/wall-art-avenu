@@ -1,6 +1,12 @@
 "use client";
 import React from "react";
+import { paintings } from "@/data/data";
+import { africanWomens } from "@/data/data";
+import { lions } from "@/data/data";
+import { realistics } from "@/data/data";
+import { mannequins } from "@/data/data";
 import FullImageDialog from "@/common/FullImageDialog";
+import CollectionsIcon from "@mui/icons-material/Collections";
 import {
   Nunito,
   Rokkitt,
@@ -9,6 +15,7 @@ import {
   Freehand,
   Sirin_Stencil,
 } from "next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,29 +35,75 @@ const Galleries = () => {
         >
           Our Gallery
         </h1>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center mt-10">
-          {[1, 2].map((item) => (
-            <div key={item} className="w-full ">
-              <div className="relative">
-                <img
-                  src="/categories/category-1.png"
-                  alt="gallery image"
-                  className="h-96 w-full object-cover object-top rounded-xl"
-                />
-                <div className="absolute bottom-3 left-3 ">
-                  <FullImageDialog image={image} />
+        <section id="paintings">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center mt-10">
+            {paintings.map((item) => (
+              <div key={item} className="w-full ">
+                <div className="relative">
+                  <img
+                    src={`${item.image}`}
+                    alt="gallery image"
+                    className="h-96 w-full object-cover object-top rounded-xl"
+                  />
+                  <div className="absolute bottom-3 left-3 ">
+                    <FullImageDialog image={item.image} />
+                  </div>
                 </div>
+
+                {/* <button className="text-secondary mt-3">Order Now</button> */}
               </div>
-              <p className="text-white mt-3 ">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptate accusamus quos, id laboriosam, iusto eos cum sunt
-                itaque dolores possimus consequatur.
-              </p>
-              <button className="text-secondary mt-3">Order Now</button>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
+        <section id="lions">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center mt-10">
+            {lions.map((item) => (
+              <div key={item} className="w-full ">
+                <div className="relative">
+                  <img
+                    src={`${item.image}`}
+                    alt="gallery image"
+                    className="h-96 w-full object-cover object-top rounded-xl"
+                  />
+                  <div className="absolute bottom-3 left-3 ">
+                    <FullImageDialog image={item.image} />
+                  </div>
+                </div>
+
+                {/* <button className="text-secondary mt-3">Order Now</button> */}
+              </div>
+            ))}
+          </div>
+        </section>
+        <section id="mannequins">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-items-center mt-10">
+            {mannequins.map((item) => (
+              <div key={item} className="w-full ">
+                <div className="relative">
+                  <img
+                    src={`${item.image}`}
+                    alt="gallery image"
+                    className="h-96 w-full object-cover object-top rounded-xl"
+                  />
+                  <div className="absolute bottom-3 left-3 ">
+                    <FullImageDialog image={item.image} />
+                  </div>
+                </div>
+
+                {/* <button className="text-secondary mt-3">Order Now</button> */}
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+      <div className="flex justify-center my-10">
+        <Link
+          href="#"
+          className="bg-secondary text-white text-xl font-medium px-5 py-3 rounded-lg flex justify-center items-center gap-4"
+        >
+          <span className={poppins.className}>view our Gallery</span>
+          <CollectionsIcon />
+        </Link>
       </div>
     </section>
   );
