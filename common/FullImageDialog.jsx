@@ -51,7 +51,7 @@ export default function FullImageDialog({ image, confirm, text }) {
             <img
               src={image}
               alt="image"
-              className="h-96 w-full object-contain block"
+              className="h-screen w-full object-contain block"
             />
           </DialogContentText>
         </DialogContent>

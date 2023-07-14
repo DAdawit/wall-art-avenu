@@ -42,18 +42,18 @@ export const services = [
       "We use advanced printing technology to create museum-quality prints of your artwork.",
   },
   {
-    id: 2,
-    title: "Artwork Delivery",
-    image: "/services/delivery.png",
-    description:
-      "Convenient shipping options available for your artwork, straight to your door",
-  },
-  {
     id: 3,
     title: "Digital Image Delivery",
     image: "/services/digitalImage.png",
     description:
       "High-quality digital files of your artwork for those who prefer to display their artwork digitally.",
+  },
+  {
+    id: 2,
+    title: "Artwork Delivery",
+    image: "/services/delivery.png",
+    description:
+      "Convenient shipping options available for your artwork, straight to your door",
   },
   {
     id: 4,

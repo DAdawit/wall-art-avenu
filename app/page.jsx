@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main className="bg-[#172121]">
       <Hero />
+      <Galleries />
       <Categories />
       <Services />
-      <Galleries />
     </main>
   );
 }
