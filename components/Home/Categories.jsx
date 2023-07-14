@@ -29,7 +29,7 @@ const Categories = () => {
   const [moreCategories, setMoreCategories] = useState(false);
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-items-center">
         {firstCategories.map((category, index) => (
           <div key={category.id} className="">

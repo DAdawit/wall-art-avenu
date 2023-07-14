@@ -93,20 +93,17 @@ const Hero = () => {
 
       <section className="mt-20">
         <h1 className="text-center text-6xl text-white font-black capitalize">
-          <span className={poppins.className}>
-            Wellcome to our{" "}
-            <span className={`text-[#DB9D47] ${sirinStencil.className}`}>
-              website
-            </span>
+          <span className={`text-[#DB9D47] ${sirinStencil.className}`}>
+            Wall Art Avenue
           </span>
         </h1>
         <p
           className={`container mx-auto text-center font-medium max-w-4xl text-gray-50 mt-8 px-5 ${poppins.className} `}
         >
-          We a curated selection of wall art designed to inspire and uplift any
-          space. From modern to traditional styles, each piece is chosen for its
-          ability to create a unique and inspiring atmosphere. Discover the art
-          that inspires, for spaces that inspire you to be your best self.
+          where we specialize in creating stunning, AI-generated images. We
+          print and deliver high-quality, archival-grade prints to your door and
+          offer digital image delivery for those who prefer to display their
+          artwork digitally.
         </p>
       </section>
     </div>
