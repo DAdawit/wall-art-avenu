@@ -28,8 +28,7 @@ const Categories = () => {
     backgroundImage: `url('/banner2.jpg')`,
     backgroundSize: "cover",
   };
-  const [numOfCategories, setNumofCategories] = useState(3);
-  const [categoriesToshow, setSategoriesToshow] = useState([]);
+
   const [moreCategories, setMoreCategories] = useState(false);
 
   return (

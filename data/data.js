@@ -1,3 +1,30 @@
+export const carouselsData = [
+  {
+    id: 1,
+    service: "web design",
+    slogan: "Beautiful websites that drive results",
+    image: "/webDesign.jpg",
+  },
+  {
+    id: 1,
+    service: "Graphic Design",
+    slogan: "Design that makes your brand stand out.",
+    image: "/graphicDesign2.jpg",
+  },
+  {
+    id: 1,
+    service: "Photography",
+    slogan: "Capturing moments that last a lifetime.",
+    image: "/photography1.jpg",
+  },
+  {
+    id: 1,
+    service: "Interior Design",
+    slogan: "Transforming spaces into dreams come true.",
+    image: "/interior design.jpg",
+  },
+];
+
 export const firstCategories = [
   {
     id: 1,
