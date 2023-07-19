@@ -24,8 +24,8 @@ const ServicesMain = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center">
           {mainServices.map((item, index) => (
             <div key={index}>
-              <div className="grid shadow-2xl rounded-xl bg-black">
-                <img
+              <div className="grid shadow-2xl rounded-xl">
+                <Image
                   src={`${item.image}`}
                   height={1000}
                   width={1000}
@@ -45,7 +45,7 @@ const ServicesMain = () => {
                   </p>
                   <Link
                     href="#"
-                    className=" w-max rounded-xl px-3 py-2 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all"
+                    className="text-sm w-max rounded-xl px-2 py-1 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all"
                   >
                     Read More
                   </Link>

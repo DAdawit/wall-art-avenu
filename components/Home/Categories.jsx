@@ -130,10 +130,10 @@ const Categories = () => {
               <div className="p-3 grid items-center w-96">
                 <div className="grid sm:flex sm:flex-row justify-evenly mt-5 px-5">
                   <div className="group relative max-w-96">
-                    <img
+                    <Image
                       src={`${category.image}`}
-                      // height={1000}
-                      // width={1000}
+                      height={1000}
+                      width={1000}
                       alt="breakfast"
                       className="w-max rounded-lg object-cover h-96"
                     />
