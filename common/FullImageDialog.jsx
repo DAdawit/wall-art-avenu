@@ -39,7 +39,7 @@ export default function FullImageDialog({ image, confirm, text }) {
     <>
       <button
         onClick={handleClickOpen}
-        className="flex items-center gap-2 bg-black text-white px-3 py-2 opacity-75 rounded-lg capitalize tracking-wide"
+        className="flex items-center gap-2 border-white text-white px-4 py-2 opacity-75 rounded-lg capitalize tracking-wide"
       >
         <span className={poppins.className}>full Image</span>
         <AllOutIcon />

@@ -19,7 +19,7 @@ const sirinStencil = Sirin_Stencil({
   weight: ["400"],
 });
 const poppins = Poppins({
-  subsets: ["latin"],
+  subsets: ["latin-ext"],
   weight: ["400"],
 });
 export default class Hero1 extends Component {
@@ -45,26 +45,21 @@ export default class Hero1 extends Component {
                     alt={item.service}
                     height={1000}
                     width={1000}
-                    className="w-screen h-[100vh] object-cover "
+                    className="w-screen h-[100vh] sm:h-96 object-cover brightness-75"
                     blurDataURL={`${item.image}`}
                   />
                   <div className="absolute top-1/3 w-full">
-                    <div className="grid justify-items-center pl-5">
-                      <h1
-                        className={`text-3xl md:text-6xl lg:text-6xl  text-secondary mt-2 tracking-wide capitalize ${sirinStencil.className}`}
-                      >
-                        {item.service}
+                    <div className="grid justify-items-center px-5 ">
+                      <h1 className="text-6xl text-secondary  whitespace-nowrap tracking-wide capitalize -mt-10">
+                        <span className={poppins.className}>
+                          {item.service}
+                        </span>
                       </h1>
-                      <h3 className="text-white text-center mt-3 font-serif text-xl sm:text-2xl mt-10">
+                      <h3
+                        className={`text-xl text-white mt-3 tracking-wide text-center ${poppins.className}`}
+                      >
                         {item.slogan}
                       </h3>
-
-                      {/* <Link
-                        href="/products"
-                        className="self-center rounded-lg mt-3 bg-last px-6 py-3 text-white font-medium font-sans text-lg tracking-widest hover:scale-105 transition-all"
-                      >
-                        Shop Now
-                      </Link> */}
                     </div>
                   </div>
                 </div>

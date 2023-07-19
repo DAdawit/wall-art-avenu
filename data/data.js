@@ -2,7 +2,7 @@ export const carouselsData = [
   {
     id: 1,
     service: "web design",
-    slogan: "Beautiful websites that drive results",
+    slogan: "Beautiful websites that drive results.",
     image: "/webDesign.jpg",
   },
   {
@@ -60,6 +60,32 @@ export const secondCategories = [
   },
 ];
 
+export const mainServices = [
+  {
+    name: "Graphic Design",
+    description:
+      "Our graphic design services include logo design, branding, social media graphics, and more. We use the latest design software to create eye-catching and professional designs for your business.",
+    image: "/mainServices/graphicDesign.jpg",
+  },
+  {
+    name: "Web Design",
+    description:
+      "We offer custom web design services to help you create a website that reflects your brand and meets your business goals. Our team of experienced designers and developers will work with you to create a responsive, user-friendly, and visually appealing website.",
+    image: "/mainServices/webdesign.jpg",
+  },
+  {
+    name: "Photography",
+    description:
+      "We specialize in portrait, landscape, event, and product photography. Our team of skilled photographers will work with you to capture the perfect shot and create high-quality images that showcase your brand or event.",
+    image: "/mainServices/photography.jpg",
+  },
+  {
+    name: "Interior Design",
+    description:
+      "Our interior design services include space planning, color schemes, furniture selection, and more. We work with you to create a customized design plan that meets your needs and fits your budget, and we help you bring your vision to life.",
+    image: "/mainServices/interior.jpg",
+  },
+];
 export const services = [
   {
     id: 1,
