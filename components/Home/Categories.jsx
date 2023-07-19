@@ -201,9 +201,9 @@ const Categories = () => {
         <div className="flex justify-center text-white text-lg font-medium mt-8">
           <button
             onClick={() => setMoreCategories(!moreCategories)}
-            className="bg-secondary px-6 py-3 flex justify-center items-center gap-3 rounded-xl"
+            className="border-2 border-secondary px-6 py-3 flex justify-center items-center gap-3 rounded-xl text-sm text-secondary "
           >
-            <span className={poppins.className}>More Categories</span>
+            <span className={poppins.className}>See More ...</span>
             <span className="animate-bounce">
               {moreCategories ? <ArrowDropDownIcon /> : <ArrowDropUpIcon />}
             </span>

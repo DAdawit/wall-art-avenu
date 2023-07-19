@@ -3,6 +3,11 @@ import Link from "next/link";
 import React from "react";
 import { Poppins } from "next/font/google";
 import { mainServices } from "@/data/data";
+import { Roboto } from "next/font/google";
+const roboto = Roboto({
+  subsets: ["greek"],
+  weight: ["300"],
+});
 const poppins = Poppins({
   subsets: ["latin-ext"],
   weight: ["400"],
@@ -19,7 +24,7 @@ const ServicesMain = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 justify-items-center">
           {mainServices.map((item, index) => (
             <div key={index}>
-              <div className="grid shadow-2xl rounded-xl bg-primary">
+              <div className="grid shadow-2xl rounded-xl bg-black">
                 <img
                   src={`${item.image}`}
                   height={1000}
@@ -33,12 +38,14 @@ const ServicesMain = () => {
                   >
                     {item.name}
                   </h1>
-                  <p className="text-gray-200 h-36 text-sm tracking-wider font-sans">
+                  <p
+                    className={`text-gray-200 h-36 text-sm tracking-wide ${roboto.className}`}
+                  >
                     {item.description}
                   </p>
                   <Link
                     href="#"
-                    className=" w-max rounded-xl px-4 py-3 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all"
+                    className=" w-max rounded-xl px-3 py-2 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all"
                   >
                     Read More
                   </Link>

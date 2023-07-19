@@ -192,3 +192,35 @@ export const realistics = [
     image: "/GalleryImages/realistic-2.png",
   },
 ];
+
+export const websites = [
+  {
+    id: 1,
+    name: "Food Menu",
+    description: "description",
+    image: "/works/foodMenu.png",
+    link: "https://food-menu-blue.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Car Rental",
+    description: "description",
+    image: "/works/carRental.png",
+    link: "https://car-rental-three-teal.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Blog Website",
+    description: "description",
+    image: "/works/blog.png",
+    link: "https://dablog-e5b94.firebaseapp.com/",
+  },
+  {
+    id: 4,
+    name: "Ecommerce",
+    description: "description",
+    image: "/works/ecommerce.png",
+    link: "https://awdma-frontend-git-dev-awdema.vercel.app/",
+  },
+];
+// VuetifyIcon;VueIcon;TypescriptIcon;TailwindIcon;NextjsIcon,MuiIcon,GraphqlIcon
