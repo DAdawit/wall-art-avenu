@@ -28,17 +28,31 @@ const Pricing = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
-            <div className="w-full bg-black">
-              <div className="h-52 bg-blue-500"></div>
+            <div className="w-full bg-gray-200 rounded-3xl">
+              <div className="bg-gray-100 py-5 rounded-3xl">
+                <div className="h-28 flex items-center justify-center ">
+                  <h2 className="text-3xl text-green-500">Birr 500</h2>
+                </div>
+                <h4 className="text-center text-lg font-medium font-sans -mt-3">
+                  Digital image only
+                </h4>
+              </div>
+              <hr />
+              <div className="py-10 px-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                voluptatum quidem magni laboriosam quis quo error, a sed,
+                maiores ex sunt expedita consequuntur ullam! Illo aperiam
+                voluptates rerum amet harum.
+              </div>
             </div>
             <div className="w-full h-96 bg-black">
-              <div className="h-52 bg-blue-500"></div>
+              <div className="h-52 bg-"></div>
             </div>
             <div className="w-full h-96 bg-black">
-              <div className="h-52 bg-blue-500"></div>
+              <div className="h-52 bg-primary"></div>
             </div>
             <div className="w-full h-96 bg-black">
-              <div className="h-52 bg-blue-500"></div>
+              <div className="h-52 bg-primary"></div>
             </div>
           </div>
         </div>
