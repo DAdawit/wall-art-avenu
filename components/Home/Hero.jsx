@@ -3,14 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  Nunito,
-  Rokkitt,
-  Open_Sans,
-  Poppins,
-  Freehand,
-  Sirin_Stencil,
-} from "next/font/google";
+import { Poppins, Sirin_Stencil } from "next/font/google";
 
 const sirinStencil = Sirin_Stencil({
   subsets: ["latin"],
@@ -22,7 +15,7 @@ const poppins = Poppins({
 });
 const Hero = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden pb-28">
       <div className="h-[100vh] w-screen relative ">
         <Image
           src="/banner2.png"
@@ -31,52 +24,8 @@ const Hero = () => {
           className="w-screen h-[100vh] object-cover brightness-95 "
           blurDataURL="/banner1.jpg"
         />
-        {/* <div className="absolute top-0  w-full z-10 px-16 py-3 border-b-[0.5px] border-gray-200">
-          <div className="w-full flex justify-between items-center">
-            <div>
-              <Image
-                src="/logoOnly.png"
-                height={1000}
-                width={1000}
-                alt="logo image"
-                className="h-14 w-14 object-contain self-center text-orange-800"
-              />
-            </div>
-            <div className="flex justify-center items-center space-x-2 text-white ">
-              <Link href="/" className="hidden sm:flex">
-                HOME
-              </Link>
-              <Link href="#about" className="hidden sm:flex">
-                ABOUT US
-              </Link>
-              <Link href="#testimonial" className="hidden sm:flex">
-                TESTIMONIAL
-              </Link>
-              <Link href="#news" className="hidden sm:flex">
-                NEWS
-              </Link>
-              <Link href="#contact" className="hidden sm:flex">
-                CONTACT
-              </Link>
-            </div>
-          </div>
-        </div> */}
         <div className="absolute top-1/3 w-full grid">
-          {/* <div className=""> */}
-          {/* <div className=""> */}
-
-          {/* </div> */}
           <div className="grid items-start w-max px-5">
-            {/* <h2
-              className={`text-start text-secondary text-4xl md:text-6xl font-extrabold tracking-widest  mt-2 ${sirinStencil.className}`}
-            >
-              Elevate your decor with our
-            </h2>
-            <h2
-              className={`text-start first-letter:sm:text-center text-secondary font-serif text-3xl md:text-5xl font-extrabold tracking-widest mt-3 ${sirinStencil.className}`}
-            >
-              stunning wall art
-            </h2> */}
             <div className="text-orange-500">
               <Image
                 src="/logo.svg"
@@ -87,7 +36,6 @@ const Hero = () => {
               />
             </div>
           </div>
-          {/* </div> */}
         </div>
       </div>
 
@@ -97,8 +45,17 @@ const Hero = () => {
             Wall Art Avenue
           </span>
         </h1>
+        <div className="flex justify-center">
+          <Image
+            src="/logoOnly.png"
+            height={1000}
+            width={1000}
+            alt="logo image"
+            className="h-14 w-14 object-contain self-center text-orange-800 my-2"
+          />
+        </div>
         <p
-          className={`container mx-auto text-center font-medium max-w-4xl text-gray-50 mt-8 px-5 ${poppins.className} `}
+          className={`container mx-auto text-center font-medium max-w-4xl text-gray-50 mt-5 px-5 ${poppins.className} `}
         >
           where we specialize in creating stunning, AI-generated images. We
           print and deliver high-quality, archival-grade prints to your door and

@@ -36,33 +36,26 @@ export default function FullImageDialog({ image, confirm, text }) {
     setOpen(false);
   };
   return (
-    <div>
+    <>
       <button
         onClick={handleClickOpen}
-        className="flex items-center gap-2 bg-gray-900 text-white px-3 py-2 opacity-75 rounded-lg capitalize tracking-wide"
+        className="flex items-center gap-2 border-white text-white px-4 py-2 opacity-75 rounded-lg capitalize tracking-wide"
       >
         <span className={poppins.className}>full Image</span>
         <AllOutIcon />
       </button>
 
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        fullWidth={"lg"}
-        maxWidth={"lg"}
-      >
+      <Dialog open={open} onClose={handleClose}>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            <img src={image} alt="image" className="h-screen object-contain" />
+            <img
+              src={image}
+              alt="image"
+              className="h-screen w-full object-contain block"
+            />
           </DialogContentText>
         </DialogContent>
-        {/* <DialogActions>
-          <Button onClick={confirmDelete}>Yes</Button>
-          <Button onClick={handleClose} autoFocus>
-            Cancel
-          </Button>
-        </DialogActions> */}
       </Dialog>
-    </div>
+    </>
   );
 }

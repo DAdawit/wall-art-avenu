@@ -4,8 +4,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="absolute top-0  w-full z-10 px-16 py-3  bg-black">
-      <div className="w-full flex justify-between items-center">
+    <div className="w-full">
+      <div className="px-16 py-3 flex justify-between items-center">
         <div>
           <Image
             src="/logoOnly.png"

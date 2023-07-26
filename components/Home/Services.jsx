@@ -20,7 +20,7 @@ const nunito = Nunito({
 const Services = () => {
   return (
     <>
-      <section className="bg-[#000] py-10">
+      <section className="bg-[#0f0c0c] py-10">
         <div className="container mx-auto mt-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 justify-items-center  px-5 sm:px-0 gap-5">
             {services.map((service) => (
@@ -38,10 +38,10 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center mt-3">
-                  <h1 className="text-center text-secondary text-lg whitespace-nowrap tracking-wider">
+                  <h1 className="text-center text-secondary font-medium text-2xl whitespace-nowrap tracking-wider">
                     <span className={poppins.className}>{service.title}</span>
                   </h1>
-                  <p className="mt-2 text-center text-gray-50 max-w-xs tracking-wide">
+                  <p className="mt-2 text-center text-gray-50 max-w-xs tracking-wide text-base">
                     <span className={nunito.className}>
                       {service.description}
                     </span>
